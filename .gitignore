@@ -2,7 +2,7 @@
 .vscode/
 build/
 
-*.md
+README_default.md
 *.mk
 *.log
 sdkconfig.old
