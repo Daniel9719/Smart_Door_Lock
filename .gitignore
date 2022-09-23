@@ -1,0 +1,9 @@
+.devcontainer/
+.vscode/
+build/
+
+*.md
+*.mk
+*.log
+sdkconfig.old
+*.projbuild
