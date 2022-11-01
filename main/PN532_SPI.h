@@ -1,7 +1,7 @@
 #ifndef PN532_SPI_H_
 #define PN532_SPI_H_
 
-#define PREAMBLE        0x0000u
+#define PREAMBLE        0x0500u
 // #define START_CODE      0x00FFu
 // #define POSTAMBLE       0x00u
 #define MULTIPLE_BIT    0x1u 
@@ -9,9 +9,9 @@
 #define NACK            0x0000FFFF0000u 
 #define ERROR           0x0000FF01FF7F8100u 
 
-#define SPI_SR          0xF2u // Status Reading  = xxxx xx10b
-#define SPI_DW          0xF1u // Data Write      = xxxx xx01b
-#define SPI_DR          0xF3u // Data Reading    = xxxx xx11b
+#define SPI_StatusRead          0x02u // Status Reading  = xxxx xx10b
+#define SPI_DataWrite           0x01u // Data Write      = xxxx xx01b
+#define SPI_DataRead            0x03u // Data Reading    = xxxx xx11b
 
 /*
     COMMANDS
